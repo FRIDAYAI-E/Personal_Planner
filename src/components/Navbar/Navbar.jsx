@@ -38,22 +38,14 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(13),
   },
   listItem: {
-    color: "text.secondary",
+    color: "black",
   },
 }));
 
 const menuItems = [
   {
     listIcons: <DashboardIcon />,
-    listText: "Dashboard",
-  },
-  {
-    listIcons: <ArticleIcon />,
     listText: "Articles",
-  },
-  {
-    listIcons: <SearchIcon />,
-    listText: "SearchNews",
   },
   {
     listIcons: <SearchIcon />,
@@ -89,6 +81,9 @@ function NavBar() {
       onClick={toggleSlider(slider, false)}
     >
       <Avatar className={classes.avatar} src={avatar} alt="Ethan Su" />
+      <Typography color="black" align="center" style={{ fontWeight: 600 }}>
+        Ethan Su
+      </Typography>
       <Divider />
       <List>
         {menuItems.map((element, index) => (
@@ -107,15 +102,16 @@ function NavBar() {
       </List>
     </Box>
   );
+
   return (
     <>
       <Box>
-        <AppBar position="static">
+        <AppBar position="static" style={{ background: "#38B6FF" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
               <ArrowBack />
             </IconButton>
-            <Typography varient="h5"> Menu</Typography>
+            <Typography varient="h5"> Personal Planner</Typography>
             <MobileRightMenuSlider
               anchor="left"
               open={state.right}

@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Button from "@material-ui/core/Button";
 import TopStory from "./TopStory";
+import Box from "@mui/material/Box";
 
 function TopNews() {
   const [topNews, setTopNews] = useState([]);
@@ -41,30 +42,32 @@ function TopNews() {
   return (
     <>
       <div>
-        <Button
-          onClick={handleSubmit}
-          value={"world"}
-          variant="outlined"
-          color="primary"
-        >
-          World News
-        </Button>
-        <Button
-          onClick={handleSubmit}
-          value={"technology"}
-          variant="outlined"
-          color="primary"
-        >
-          Technology
-        </Button>
-        <Button
-          onClick={handleSubmit}
-          value={"us"}
-          variant="outlined"
-          color="primary"
-        >
-          US News
-        </Button>
+        <Box textAlign="center">
+          <Button
+            onClick={handleSubmit}
+            value={"world"}
+            variant="outlined"
+            color="primary"
+          >
+            World News
+          </Button>
+          <Button
+            onClick={handleSubmit}
+            value={"technology"}
+            variant="outlined"
+            color="primary"
+          >
+            Technology
+          </Button>
+          <Button
+            onClick={handleSubmit}
+            value={"us"}
+            variant="outlined"
+            color="primary"
+          >
+            US News
+          </Button>
+        </Box>
       </div>
       <TopStory loading={loading} article={topNews} />
     </>

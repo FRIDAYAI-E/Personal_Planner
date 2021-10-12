@@ -8,11 +8,12 @@ function SearchBar(props) {
   return (
     <Box
       component="form"
+      m="auto"
       sx={{
         "& .MuiTextField-root": { m: 1, width: "25ch" },
       }}
       noValidate
-      autoComplete="on"
+      autoComplete="off"
     >
       <div>
         <TextField

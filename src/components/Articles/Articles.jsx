@@ -2,7 +2,8 @@ import * as React from "react";
 import { useEffect, useState } from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-
+import Paper from "@mui/material/Paper";
+import Typography from "@mui/material/Typography";
 import Article from "./Article";
 import SearchBar from "../Searchbar/SearchBar";
 
@@ -56,13 +57,30 @@ function Articles() {
 
   return (
     <>
-      <Grid container>
-        <SearchBar
-          handleSubmit={handleSubmit}
-          handleChange={handleChange}
-          text={text}
-        />
-      </Grid>
+      <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
+        <Grid container spacing={3}>
+          {/* Recent Orders */}
+          <Grid item xs={12}>
+            <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
+              <SearchBar
+                handleSubmit={handleSubmit}
+                handleChange={handleChange}
+                text={text}
+              />
+            </Paper>
+          </Grid>
+        </Grid>
+      </Container>
+
+      <Typography
+        component="h1"
+        variant="h6"
+        color="primary"
+        gutterBottom
+        align="center"
+      >
+        {`${searchTerm}`} Section
+      </Typography>
       <Container sx={{ py: 8 }} maxWidth="xl">
         <Article loading={loading} article={cards} />
       </Container>
