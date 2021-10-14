@@ -41,7 +41,7 @@ function Articles() {
     fetchData();
   }, [searchTerm]);
 
-  //console.log(newArticle);
+  console.log(newArticle);
 
   const cards = newArticle;
 

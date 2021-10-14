@@ -44,7 +44,11 @@ function Article(props) {
                   <Typography gutterBottom variant="h5" component="h2">
                     {element.headline.main}
                   </Typography>
-                  <Typography>{element.abstract}</Typography>
+                  <Typography gutterBottom>{element.abstract}</Typography>
+                  <Typography gutterBottom style={{ fontWeight: 600 }}>
+                    {element.byline.original}
+                  </Typography>
+                  <Typography>{element.pub_date}</Typography>
                 </CardContent>
                 <CardActions>
                   <Button

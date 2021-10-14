@@ -9,6 +9,7 @@ function Main() {
   return (
     <main>
       <Switch>
+        <Route exact path="/" component={Articles} />
         <Route path="/About" component={About} />
         <Route path="/Articles" component={Articles} />
         <Route path="/TopNews" component={TopNews} />

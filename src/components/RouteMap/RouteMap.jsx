@@ -5,14 +5,13 @@ import List from "../List/List";
 import patientsData from "../patients";
 import Map from "./Map";
 import locations from "../Locations";
-import { LocationOnSharp } from "@mui/icons-material";
 
 function RouteMap() {
   //const GOOGLE_APIKEY = process.env.REACT_APP_GOOGLE_API_KEY;
   // to be replaced by API in the future
   let address = [];
   //const [patient, setPatient] = useState([]);
-  const [places, setPlaces] = useState([]);
+  //const [places, setPlaces] = useState([]);
 
   const [coordinates, setCoordinates] = useState({});
   const [bounds, setBounds] = useState(null);
