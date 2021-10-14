@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Grid,
-  Typography,
-  InputLabel,
-  MenuItem,
-  FormControl,
-  Select,
-} from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 import PatientDetails from "../PatientDetails/PatientDetails";
 
 function List(props) {
@@ -20,7 +13,7 @@ function List(props) {
         align="left"
         style={{ fontWeight: 600 }}
       >
-        Patient List
+        Patients to Visit
       </Typography>
 
       <Grid container spacing={3}>

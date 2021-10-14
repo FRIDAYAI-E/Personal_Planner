@@ -18,7 +18,6 @@ import { ArrowBack } from "@material-ui/icons";
 import { ListItemIcon } from "@mui/material";
 import SearchIcon from "@material-ui/icons/Search";
 import DashboardIcon from "@mui/icons-material/Dashboard";
-import ArticleIcon from "@mui/icons-material/Article";
 import MapIcon from "@mui/icons-material/Map";
 import InfoIcon from "@mui/icons-material/Info";
 import avatar from "./avatar.png";

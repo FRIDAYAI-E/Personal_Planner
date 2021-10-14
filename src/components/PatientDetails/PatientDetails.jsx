@@ -1,17 +1,11 @@
 import React from "react";
-import {
-  Box,
-  Typography,
-  Card,
-  CardContent,
-  ButtonBase,
-} from "@material-ui/core";
+import { Box, Typography, Card, CardContent } from "@material-ui/core";
 
 const PatientDetails = (props) => {
-  console.log(props.places.name);
+  //console.log(props.places.name);
   return (
-    <Card elevation={6} onClick={props.handleClick}>
-      <CardContent>
+    <Card elevation={6} onClick={() => props.handleClick(props.places)}>
+      <CardContent value={props.places}>
         <Typography gutterBottom variant="h5">
           {props.places.name}
         </Typography>

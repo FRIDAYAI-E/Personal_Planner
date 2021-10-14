@@ -14,7 +14,7 @@ const patients = [
     {
         name: 'Jimmy Martin',
         diagnosis: 'Covid-19',
-        address: 'Admiralty Rd W,',
+        address: 'Admiralty Rd W',
         postalCode: '759956'
     },
     {
@@ -22,7 +22,7 @@ const patients = [
         diagnosis: 'Covid-19',
         address: '8 Sentosa Gateway',
         postalCode: '098269'
-    },
+    }
 
 ];
 
