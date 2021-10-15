@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# My Personal Diary
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The project can be access here [https://personal-planner-ten.vercel.app/](https://personal-planner-ten.vercel.app/)
 
 ## Available Scripts
 
