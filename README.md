@@ -1,6 +1,10 @@
-# My Personal Diary
+# Daily Workbase Planner
 
 The project can be access here [https://personal-planner-ten.vercel.app/](https://personal-planner-ten.vercel.app/)
+
+## Project Description
+
+Professionals are overwhelmed with different administrative tasks which the use of this application, we will be able to free up their time for more high value work process. Thus this project will be to create an application where it will be a personal planner where they can have news and patients location planned out saving all their time 
 
 ## Available Scripts
 
